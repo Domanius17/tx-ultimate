@@ -174,7 +174,12 @@ binary_sensor:
     name: "Touchfield 1"
     id: touchfield_1
     on_press:
-#DOMAAAAAAAAAAAAAAAAAAAAAAA
+      - if:
+          condition:
+            lambda: "return ${toggle_relay_1_on_touch};"
+          then:
+            - switch.toggle: relay_1
+      - delay: ${button_on_time}
       - binary_sensor.template.publish:
           id: touchfield_1
           state: OFF
