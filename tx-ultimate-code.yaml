@@ -2,28 +2,28 @@ substitutions:
   name: "shys-tx-ultimate"
   friendly_name: "TX Ultimate"
 
-  relay_count: "2"
+  relay_count: "3"
 
   toggle_relay_1_on_touch: "true"
-  toggle_relay_2_on_touch: "true"
+  toggle_relay_2_on_touch: "false"
   toggle_relay_3_on_touch: "true"
 
-  vibra_time: 150ms
+  vibra_time: 100ms
   button_on_time: 500ms
 
   button_brightness: "0.7"
   button_color: "{0,0,100}"
 
   nightlight: "on"
-  nightlight_brightness: "0.2"
-  nightlight_color: "{80,70,0}"
+  nightlight_brightness: "0.3"
+  nightlight_color: "{80,40,0}"
 
   latitude: "50.123456°"
   longitude: "5.654321°"
 
   touch_brightness: "1"
   touch_color: "{0,100,100}"
-  touch_effect: "Scan"
+  touch_effect: ""
 
   long_press_brightness: "1"
   long_press_color: "{100,0,0}"
@@ -44,7 +44,6 @@ substitutions:
   relay_1_pin: GPIO18
   relay_2_pin: GPIO17
   relay_3_pin: GPIO27
-  relay_4_pin: GPIO23
 
   vibra_motor_pin: GPIO21
   pa_power_pin: GPIO26
